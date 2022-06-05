@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../../assests/Burger_icon/burger.png" type="burger/png" sizes="16x16">
+
+    <title>Italiano</title>
+
+    <link rel="stylesheet" href="../css/menu-design.css" />
+    <link rel="stylesheet" href="../../Home/css/home.css">
+    <link rel="stylesheet" href="../../Home/css/all.min.css">
+    <link rel="stylesheet" href="../../Home/css/fonts.css">
+
+    <!-- SOCIAL MEDIA ICONS  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!-- Strat Header -->
+    <header>
+        <div class="container">
+            <a href="../../Home/html/home.html" class="logo">Italiano</a>
+            <nav>
+                <i class="fas fa-bars toggle_menu" aria-hidden="true"></i>
+                <ul class="main_list">
+                    <li><a href="../../Home/html/home.html">HOME</a></li>
+                    <li><a href="../../menu/html/menu-design.html">MENU</a></li>
+                    <li><a href="../../about/html/about.html">ABOUT</a></li>
+                    <li>
+                        <a href="../../contact us/html/BookTable.html">BOOK TABLE</a>
+                    </li>
+                </ul>
+                <div class="icon">
+                    <a href="../../login_sign/sign_up/html/signup.html"><i class="fas fa-user" aria-hidden="true"></i
+            ></a>
+                </div>
+                <div class="icon">
+                    <a href="../../NotFound/html/notfound.html"> <i class="fas fa-shopping-cart" aria-hidden="true"></i></a>
+                </div>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
+    <br>
+    <br>
+    <!-- Strat Menu Section -->
+    <section class="menu">
+        <div class="container">
+            <div class="menu-head">
+                <h2>Our Menu</h2>
+            </div>
+            
+            <ul class="filters-menu">
+                <li class="active" data-filter="All">All</li>
+                <li data-filter=".burger">Burger</li>
+                <li data-filter=".pizza">Pizza</li>
+                <li data-filter=".sandawich">Sandawich</li>
+                <li data-filter=".fries">Fries</li>
+            </ul>
+        </div>
+ <!--Start search box -->
+            <div class="topnav">
+                    <input type="text"id='search-box' placeholder="  Search...." onchange="cardSearch()">
+                  </div>
+            <!--End search box -->
+            <!-- starting food menuo section -->
+        <div class="food-section">
+            <div class="container">
+                <div class="box el-1">
+                    <img src="../../assests/menu_images/burger (1).jpg" alt="" />
+                    <div class="content">
+                        <h3>CHICK FLICK</h3>
+                        <p>
+                            Pure chiken strips patty with our custom Secret sauce with pineapple chunks, vinatge cheddar cheese and Smoke sauce.
+                        </p>
+                    </div>
+                    <div class="info">
+                        <h2>17$</h2>
+                        <a class="button" href="#">
+                            <i class="fas fa-shopping-cart" id="icon" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="box el-2">
+                    <img src="../../assests/menu_images/burger (3).jpg" alt="" />
+                    <div class="content">
+                        <h3>OLD SCHOOL</h3>
+                        <p>
+                            Crispy cheese stuffed with beef bacon, crispy onion, BBQ sauce, grilled burger patty, and smoked cheese sauce with mushroom.
+                        </p>
+                    </div>
+                    <div class="info">
+                        <h2>20$</h2>
+                        <a class="button" href="#">
+                            <i class="fas fa-shopping-cart" id="icon" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="box el-3">
+                    <img src="../../assests/menu_images/burger (4).jpg" alt="" />
+                    <div class="content">
+                        <h3>X URBAN</h3>
+                        <p>
+                            Crispy cheesy mushroom, beef bacon, cheddar cheese, BBQ sauce, Buffalo sauce, and burgr patty,charbroiled sauceand swiss cheese.
+                        </p>
+                    </div>
+                    <div class="info">
+                        <h2>15$</h2>
+                        <a class="button" href="#">
+                            <i class="fas fa-shopping-cart" id="icon" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="box el-4">
+                    <img src="../../assests/menu_images/pizza (1).jpg" alt="" />
+                    <div class="content">
+                        <h3>BAEBECUE CHICKEN</h3>
+                        <p>
+                            Zenzero A melody of sliced salami, glazed ham, pepperoni, red onions & a choice of chilli or BBQ sauce. Spicy Beef & Chicken Supreme Spicy beef, spicy shredded chicken & green peppers.
+                        </p>
+                    </div>
+                    <div class="info">
+                        <h2>26$</h2>
+                        <a class="button" href="#">
+                            <i class="fas fa-shopping-cart" id="icon" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="box el-5">
+                    <img src="../../assests/menu_images/pizza (2).jpg" alt="" />
+                    <div class="content">
+                        <h3>VEGETARIAN</h3>
+                        <p>
+                            peppers, pineapple, onions & sweetcorn. Spicy Chicken Spicy shredded chicken, green peppers & onions. Buffalo Chicken Shredded chicken, pepperoni & green peppers with buffalo sauce.
+                        </p>
+                    </div>
+                    <div class="info">
+                        <h2>13$</h2>
+                        <a class="button" href="#">
+                            <i class="fas fa-shopping-cart" id="icon" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="box el-6">
+                    <img src="../../assests/menu_images/pizza (6).jpg" alt="" />
+                    <div class="content">
+                        <h3>HUDSON BURNER</h3>
+                        <p>
+                            The Hudson Burner Layered with chilli sauce,topped with pepperoni, onions, jalapenos & chilli flakes. Calzone Folded pizza with salami & ham.Meastfeast A meal for the hungry
+                        </p>
+                    </div>
+                    <div class="info">
+                        <h2>19$</h2>
+                        <a class="button" href="#">
+                            <i class="fas fa-shopping-cart" id="icon" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="box el-7">
+                    <img src="../../assests/menu_images/sandawish (1).jpg" alt="" />
+                    <div class="content">
+                        <h3>TOASTED SANDAWICH</h3>
+                        <p>
+                            The classic BLT sandwich is given an extra flavour punch thanks to the cheddar and garlic mayonnaise,Bacon, egg, tomato.
+                        </p>
+                    </div>
+                    <div class="info">
+                        <h2>20$</h2>
+                        <a class="button" href="#">
+                            <i class="fas fa-shopping-cart" id="icon" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="box el-8">
+                    <img src="../../assests/menu_images/sandawish (4).jpg" alt="" />
+                    <div class="content">
+                        <h3>CROQUE MONSIEUR</h3>
+                        <p>
+                            delicious French ham and cheese sandwich made with gruyere, parmesan, ham and a simple béchamel sauce, toasted in the oven.
+                        </p>
+                    </div>
+                    <div class="info">
+                        <h2>17$</h2>
+                        <a class="button" href="#">
+                            <i class="fas fa-shopping-cart" id="icon" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+                <div class="box el-9">
+                    <img src="../../assests/menu_images/waffle.jpg" />
+                    <div class="content">
+                        <h3>DECADENT WAFFLE</h3>
+                        <p>
+                            It is best Waffle seasoning with the right amount herbs, and spices. Try it, and you'll never want to have waffles any other way!
+                        </p>
+                    </div>
+                    <div class="info">
+                        <h2>15$</h2>
+                        <a class="button" href="#">
+                            <i class="fas fa-shopping-cart" id="icon" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="read_more_section">
+            <div class="food-section">
+                <div class="container">
+                    <div class="box el-10">
+                        <img src="../../assests/menu_images/fries.png" alt="" style="background-color: white" />
+                        <div class="content">
+                            <h3>FRENCH FRIES</h3>
+                            <p>
+                                It is best French fry seasoning with the right amount of salt, herbs, and spices. Try it, and you'll never want to have fries any other way!</p>
+                        </div>
+                        <div class="info">
+                            <h2>20$</h2>
+                            <a class="button" href="#"><i class="fas fa-shopping-cart" id="icon" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="box el-12">
+                        <img src="../../assests/menu_images/waffle-fries.jpg" alt="" style="height: 242px;" />
+                        <div class="content">
+                            <h3>Waffle FRIES</h3>
+                            <p> It is waffle fry seasoning with the right amount of salt, herbs, and spices. Try it, and you'll never want to have fries any other way!</p>
+                        </div>
+                        <div class="info">
+                            <h2>25$</h2>
+                            <a class="button" href="#"><i class="fas fa-shopping-cart" id="icon" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="box el-">
+                        <img src="../../assests/menu_images/curly-fries.jpg" alt="" style="height: 238px;" />
+                        <div class="content">
+                            <h3>CURLY FRIES</h3>
+                            <p> It is best curly fry seasoning with the right amount of salt, herbs, and spices. Try it, and you'll never want to have fries any other way!</p>
+                        </div>
+                        <div class="info">
+                            <h2>30$</h2>
+                            <a class="button" href="#"><i class="fas fa-shopping-cart" id="icon" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="loc-button">
+            <button id="button-read" onclick="showMore()">VIEW MORE</button>
+        </div>
+    </section>
+
+    <!-- End Menu Section -->
+
+    <!-- START FOOTER -->
+    <footer class="footer_container">
+        <div class="left_section">
+            <h1 class="footer_title">contact us</h1>
+            <p class="footer_text">WHETHER TO MAKE A RESERVATION <br> OR FOR INFORMATION</p>
+            <p class="fas fa-map-marker footer_text">&nbsp;Italiano 242 E 14th St</p>
+            <br>
+            <p class="fas fa-phone footer_text">&nbsp;call : +20 1140636460</p>
+            <br>
+            <p class="fas fa-envelope footer_text">&nbsp;abdo@gmail.com</p>
+            <br>
+            <!-- SOCIAL MEDIA ICONS  -->
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+        <div class="center_section">
+            <h1 class="footer_title">visit us</h1>
+            <p class="footer_text">OPEN FOR GROUPS OF 10 AND OVER <br> OUTSIDE OF OUR REGULAR HOURS</p>
+            <h1 class="footer_title">BUSINESS HOURS</h1>
+            <div style="overflow-x:auto;">
+                <table>
+                    <tr class="table_row">
+                        <th class="footer_text">MONDAY</th>
+                        <td class="footer_text">5PM TO 9PM</td>
+                    </tr>
+                    <tr class="table_row">
+                        <th class="footer_text">Tuesday</th>
+                        <td class="footer_text">5PM TO 8PM</td>
+                    </tr>
+                    <tr class="table_row">
+                        <th class="footer_text">WEDNESDAY</th>
+                        <td class="footer_text">5PM TO 8PM</td>
+                    </tr>
+                    <tr class="table_row">
+                        <th class="footer_text">THURSDAY</th>
+                        <td class="footer_text">5PM TO 8PM</td>
+                    </tr>
+                    <tr class="table_row">
+                        <th class="footer_text">FRIDAY</th>
+                        <td class="footer_text">5PM TO 8PM</td>
+                    </tr>
+                    <tr class="table_row">
+                        <th class="footer_text">SATURDAY</th>
+                        <td class="footer_text">5PM TO 8PM</td>
+                    </tr>
+                    <tr class="table_row">
+                        <th class="footer_text">SUNDAY</th>
+                        <td class="footer_text">5PM TO 8PM</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="right_section">
+            <h1 class="footer_title">find us</h1>
+            <p class="footer_text">358, 90 ST TAGAMOA <br>NEW CAIRO LOCATION</p>
+            
+        </div>
+        <br>
+        <p class="footer_copyrigth">&copy;&nbsp;ITALIANO 2021, ALL RIGHTS RESERVED.</p>
+    </footer>
+    <!-- END FOOTER -->
+
+    <script src="../js/menu-design.js"></script>
+</body>
+
+</html>

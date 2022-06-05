@@ -1,0 +1,541 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-color: #fff;
+    --hover-icon-color: #f7d410;
+    --box-background: #222831;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    width: 100%;
+    padding: 0 15px 0 15px;
+    margin: 0 auto 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* START SLIDER SECTION */
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.title_text {
+    position: absolute;
+    top: 37%;
+    font-size: 5vw;
+    left: 4%;
+    font-family: "Dancing Script", cursive;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.caption_text {
+    font-size: 2vw;
+    color: var(--main-color);
+    font-weight: 300;
+    position: absolute;
+    top: 55%;
+    left: 4%;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* END SLIDER SECTION */
+
+
+/* START OFFFERS SECTION */
+
+.item_heading {
+    text-align: center;
+    font-size: 2vh;
+    font-family: "Dancing Script";
+    padding-bottom: 20px;
+    margin-top: 65px;
+    text-transform: uppercase;
+}
+
+.offer_items {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 10px;
+    padding: 0 10px 0 10px;
+    grid-column-gap: 20px;
+}
+
+.item_1,
+.item_2 {
+    display: flex;
+    width: 100%;
+    background-color: var(--box-background);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.first_offer_item_image:hover {
+    transform: scale(1.1);
+}
+
+.first_offer_item_image {
+    width: 175px;
+    min-width: 175px;
+    height: 175px;
+    margin-right: 15px;
+    border-radius: 100%;
+    border: 5px solid #ffbe33;
+    overflow: hidden;
+}
+
+.offer_item_details {
+    color: #fff;
+    font-size: 3vw;
+    font-family: "Dancing Script";
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    margin: 15px;
+}
+
+#order_btn,
+#order_btn_2 {
+    border: none;
+    border-radius: 50px;
+    height: 33px;
+    width: 100%;
+    background: var(--hover-icon-color);
+    cursor: pointer;
+}
+
+#order_btn:hover,
+#order_btn:hover_2 {
+    background-color: #f7d410ad;
+}
+
+@media (max-width: 767px) {
+    .offer_items {
+        grid-template-columns: auto;
+        margin: 10px 0 10px 0;
+        grid-gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    #order_btn,
+    #order_btn_2 {
+        width: 70px;
+    }
+    .item_1,
+    .item_2 {
+        width: 305px;
+    }
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.column img {
+    margin-top: 12px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* END OFFFERS SECTION */
+
+
+#googleMap {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+
+/* START TEAM SECTION */
+
+.our_team {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    gap: 10px;
+    padding: 0 20px 0 20px;
+}
+
+.team {
+    background: var(--box-background);
+    color: var(--main-color);
+    padding: 35px 0 35px 0;
+    line-height: 30px;
+    border-radius: 20px;
+}
+
+.team_title {
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.team_text {
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.social_icon {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+}
+
+@media (max-width: 767px) {
+    .our_team {
+        grid-template-columns: auto auto;
+        font-size: 20px;
+    }
+    .team_text {
+        font-size: 3.5vw;
+    }
+    .team_title {
+        font-size: 7vw;
+    }
+}
+
+@media (max-width: 767px) {
+    .our_team {
+        grid-template-columns: auto;
+        font-size: 20px;
+    }
+}
+
+
+/* END TEAM SECTION */
+
+
+/* START REVIEWS SECTION */
+
+.rating_slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+    border-radius: 10px;
+}
+
+.rating_slides {
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+
+.rating_avatar {
+    width: 175px;
+    min-width: 175px;
+    height: 175px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 0 0 30px 0;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: var(--hover-icon-color);
+    color: var(--main-color);
+}
+
+q {
+    font-style: italic;
+}
+
+.checked {
+    margin-top: 10px;
+    color: orange;
+}
+
+
+/* END REVIEWS SECTION */
+
+
+/* START FOOTER */
+
+.footer_container {
+    background-color: var(--box-background);
+    padding: 40px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    text-align: center;
+}
+
+.footer_title {
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-family: 'Dancing Script';
+    font-weight: bold;
+    color: var(--main-color);
+    padding: 0 0 25px 0;
+}
+
+.footer_text {
+    color: #B9B9B9;
+    line-height: 36px;
+    padding: 0 0 17px 0;
+    font-weight: 600;
+}
+
+.location_btn {
+    background: #b9b9b9;
+    color: #fff;
+    width: 60%;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.location_btn:hover {
+    background-color: var(--hover-icon-color);
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+th {
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+td {
+    text-align: right;
+    border-bottom: 1px solid #ddd;
+}
+
+.footer_copyrigth {
+    color: #B9B9B9;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 10px;
+}
+
+@media (max-width: 426px) {
+    .footer_container {
+        grid-template-columns: auto;
+    }
+    .footer_title {
+        font-size: 5vw;
+    }
+}
+
+
+/* END FOOTER */
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  bottom: 0;
+  background-color: #222831;
+  font-weight: bold;
+  font-size: larger;
+  width: 100%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {bottom: -300px; opacity: 0} 
+  to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+/* drop down */
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}

@@ -1,0 +1,217 @@
+/*Start Menu Section*/
+
+header {
+    background-color: var(--box-background);
+    top: 0;
+}
+
+.menu {
+    margin: 32px 0;
+}
+
+.menu .container {
+    max-width: 1280px;
+    margin: 0px auto;
+    padding: 0px 16px;
+    position: relative;
+}
+
+.menu-head {
+    padding: 52px 0 30px;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Dancing Script", cursive;
+}
+
+.filters-menu {
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: "Ubuntu", sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.menu .filters-menu li {
+    padding: 7px 25px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.menu .filters-menu li.active {
+    background-color: var(--box-background);
+    color: var(--main-color);
+}
+
+.food-section {
+    padding-top: 100px;
+    padding-bottom: 48px;
+    position: relative;
+}
+
+.food-section .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.food-section .box {
+    box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+    background-color: var(--box-background);
+    border-radius: 6px;
+    overflow: hidden;
+    display: block;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.food-section .box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 2px 15px rgb(0 0 0 / 40%);
+}
+
+.food-section .box img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0 0 0 45px;
+}
+
+.food-section .box .content {
+    padding: 20px;
+    background-color: var(--box-background);
+    border: radius 20px;
+}
+
+.food-section .box .content h3 {
+    margin: 0;
+    color: var(--main-color);
+    font-family: "Ubuntu", sans-serif;
+}
+
+.food-section .box .content p {
+    margin: 10px 0 0;
+    line-height: 1.5;
+    color: var(--main-color);
+    font-family: "Cairo", sans-serif;
+}
+
+.food-section .box .info {
+    padding: 20px;
+    border-top: 1px solid #e6e6e7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.food-section .box .info {
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: "Cairo", sans-serif;
+}
+
+.food-section .box .info i {
+    color: white;
+    font-size: 25px;
+}
+
+
+
+.loc-button {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.button-read {
+    display: inline-block;
+    padding: 10px 45px;
+    background-color: #ffbe33;
+    color: #ffffff;
+    border-radius: 45px;
+    border: none;
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif;
+}
+
+
+
+
+/*End Menu Section*/
+
+#button-read {
+    padding: 10px 45px;
+    background-color: var(--hover-icon-color);
+    color: var(--main-color);
+    border-radius: 50px;
+    border: none;
+    font-family: "Ubuntu", sans-serif;
+}
+
+
+
+.show {
+    display: block;
+}
+
+#read_more_section {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .food-section .container,
+    .filters-menu {
+        grid-template-columns: auto;
+    }
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 3px 1px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+
+/*End FOOTER*/
+/* image search bod starting */
+.topnav img{
+        width: 30px;
+    height: 20px;
+    background-color: black;
+}

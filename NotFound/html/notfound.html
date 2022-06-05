@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Scrollspy </title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="../../notfound/css/notfound.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+    body {
+      position: relative; 
+    }
+    #Part1 {padding-top:50px;height:500px;color: #fff; background-color: #d099e5;}
+    #Part2 {padding-top:50px;height:700px;color: #fff; background-color: #641342;}
+    #Part3 {padding-top:50px;height:800px;color: #fff; background-color: #4d3641;}
+    #Part4 {padding-top:50px;height:500px;color: #fff; background-color: #1a0b0e;}
+     </style>
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#">Scrollspy</a>
+        </div>
+        <div>
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav">
+              <li><a href="#Part1">Part 1</a></li>
+              <li><a href="#Part2">Part 2 </a></li>
+              <li><a href="#Part3">Part 3 </a></li>
+              <li><a href="#Part4">Part 4 </a></li>
+    
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>    
+    
+    <div id="Part1" class="container-fluid">
+      <h1>Part 1</h1>
+      <div class="item_heading">
+        <h1>Offers</h1>
+    </div>
+
+    <div class="offer_items">
+        <div class="item_1">
+            <img class="first_offer_item_image" src="../../assests/item_image.jpg" />
+            <div class="offer_item_details">
+                <h5>Tasty Thursdays</h5>
+                <h6>20% Off</h6>
+                <button id="order_btn">Order Now</button>
+            </div>
+        </div>
+        <div class="item_2">
+            <img class="first_offer_item_image" src="../../assests/item_image.jpg" />
+            <div class="offer_item_details">
+                <h5>Tasty Thursdays</h5>
+                <h6>50% Off</h6>
+                <button id="order_btn_2">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    
+    </div>
+    <div id="Part2" class="container-fluid">
+      <h1>Part 2</h1>
+      <div class="item_heading">
+        <h1>our team</h1>
+    </div>
+
+    <br />
+
+<!-- START TEAM SECTION-->
+
+    <div class="our_team">
+        <div class="team restaurant_head">
+            <img src="../../assests/our_team/restaurant manager.jpg" alt="team_humen_avatar" class="rating_avatar" />
+            <h1 class="team_title">restaurant manager</h1>
+            <p class="team_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="social_icon">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+        <div class="team restaurant_manager">
+            <img src="../../assests/our_team/manager.jpg" alt="team_humen_avatar" class="rating_avatar" />
+            <h1 class="team_title">manager</h1>
+            <p class="team_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="social_icon">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+        <div class="team chef">
+            <img src="../../assests/our_team/cheif.jpg" alt="team_humen_avatar" class="rating_avatar" />
+            <h1 class="team_title">chef</h1>
+            <p class="team_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="social_icon">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+    <br />
+    <!-- END TEAM SECTION-->
+    </div>
+
+
+
+    <div id="Part3" class="container-fluid">
+      <h1>Part 3</h1>
+      <div class="item_heading">
+        <h1>our location</h1>
+        <br>
+      <!-- this section specific for google map -->
+      <div id="googleMap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13820.3505554605!2d31.446813994249965!3d30.005639835791857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583ccdd46e1ef7%3A0xaba36713d4ed159b!2sClams%20and%20Claws%20Tagamo3!5e0!3m2!1sar!2seg!4v1640444301177!5m2!1sar!2seg"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+      <!-- end of the div contain the form and the map -->
+    </div>
+
+
+    <div id="Part4" class="container-fluid">
+      <h1>Part 4  </h1>
+      <h2>name of programmer</h2>
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn" style="background-color:#5cb85c;">get name</button>
+
+
+<!-- dropdown -->
+<h2>Hiring!!</h2>
+<p>IF you want to hire me</p>
+<div class="dropdown">
+  <button class="dropbtn">text my</button>
+  <div class="dropdown-content">
+    <a href="#">My facebook</a>
+    <a href="#">My email</a>
+    <a href="#">My twitter</a>
+  </div>
+</div>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>The name of programmer</h2>
+    </div>
+    <div class="modal-body">
+      <p>عبدالرحمن السيد الشحات</p>
+      <p>Sec 4</p>
+    </div>
+  </div>
+  
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+    </div>
+     
+    
+    </body>
+</html>
