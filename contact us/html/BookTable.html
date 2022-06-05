@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../assests/Burger_icon/burger.png" type="burger/png" sizes="16x16">
+    <title>Italiano</title>
+  <!-- Contextual table --> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- Clock -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../CSS/booktable.css" />
+    <link rel="stylesheet" href="../../Home/css/all.min.css">
+    <link rel="stylesheet" href="../../Home/css/home.css">
+    <link rel="stylesheet" href="../../Home/css/fonts.css">
+<script src="../../vue.js"></script>
+
+    <!-- SOCIAL MEDIA ICONS  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <body>
+        <!-- START HEADER-->
+        <header>
+            <div class="container">
+                <a href="../../Home/html/home.html" class="logo">Italiano</a>
+                <nav>
+                    <i class="fas fa-bars toggle_menu" aria-hidden="true"></i>
+                    <ul class="main_list">
+                        <li><a href="../../Home/html/home.html">HOME</a></li>
+                        <li><a href="../../menu/html/menu-design.html">MENU</a></li>
+                        <li><a href="../../about/html/about.html">ABOUT</a></li>
+                        <li>
+                            <a href="../../contact us/html/BookTable.html">BOOK TABLE</a>
+                        </li>
+                    </ul>
+                    <div class="icon">
+                        <a href="../../login_sign/sign_up/html/signup.html"><i class="fas fa-user" aria-hidden="true"></i
+                ></a>
+                    </div>
+                    <div class="icon">
+                        <a href="../../NotFound/html/notfound.html"> <i class="fas fa-shopping-cart" aria-hidden="true"></i></a>
+                    </div>
+            </nav>
+          </div>
+        </header>
+        <!-- START HEADER-->
+
+        <!-- selection tag contain the Book A tabel section -->
+        <section class="book_section layout_padding">
+            <!-- this div contain the heading, form and map -->
+            <div class="section_container">
+                <!-- this div contain the heading for the section -->
+                <div class="heading_container">
+                    <h2>
+                        Book A Table
+                    </h2>
+                </div>
+                <!-- end of the div contain the heading for the section -->
+                <!-- this div contain the form and the map -->
+    
+               
+                <div>
+                    <!-- this div contain the form -->
+                    <div class="col-md-6">
+                        <!-- this div contain the form -->
+                        <div class="form_container">
+                            <form autocomplete="off">
+                                <div>
+                                    <input type="text" placeholder="Your Name" class="form-control" required />
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="Phone Number" class="form-control" required />
+                                </div>
+                                <div>
+                                    <input type="email" placeholder="Your Email" class="form-control" required />
+                                </div>
+                                <div>
+                                    <select class="form-control" required>
+                                        <option disabled selected> How many persons? </option>
+                                        <option> 1 </option>
+                                        <option> 2 </option>
+                                        <option> 3 </option>
+                                        <option> 4 </option>
+                                        <option> 5 </option>
+                                    </select>
+                                    <div>
+                                        <input type="date" class="form-control" required />
+                                    </div>
+                                    <div class="btn_box">
+                                        <button onclick="alert('Your booking has been received')"> BOOK NOW </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- end of the div contain the form -->
+                    </div>
+                    <!-- end of the div contain the form -->
+                    <!-- this section specific for google map -->
+                    
+                </div>
+                <!-- end of the div contain the form and the map -->
+            </div>
+            <!-- end of the div contain the heading, form and map -->
+        </section>
+        <!-- end of the selection tag -->
+        <!-- Contextual table -->       
+        <div class="container">
+        
+        </div>
+          
+</div>
+           
+        <!-- START FOOTER -->
+        <footer class="footer_container">
+            <div class="left_section">
+                <h1 class="footer_title">contact us</h1>
+                <p class="footer_text">WHETHER TO MAKE A RESERVATION <br> OR FOR INFORMATION</p>
+                <p class="fas fa-map-marker footer_text">&nbsp;Italiano 242 E 14th St</p>
+                <br>
+                <p class="fas fa-phone footer_text">&nbsp;call : +20 1140636460</p>
+                <br>
+                <p class="fas fa-envelope footer_text">&nbsp;abdo@gmail.com</p>
+                <br>
+            <!-- SOCIAL MEDIA ICONS  -->
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            </div>
+            <div class="center_section">
+                <h1 class="footer_title">visit us</h1>
+                <p class="footer_text">OPEN FOR GROUPS OF 10 AND OVER <br> OUTSIDE OF OUR REGULAR HOURS</p>
+                <!-- time section starting -->
+                <div >
+                    <div class="clock  footer_text"></div>
+                    <script src="..//contact.js"></script>
+            <div id="open">
+                <p class="h3 text-success" v-if="hours >15">{{ open}}</p>
+                <p class="h3 text-success" v-else-if="hours < 19">{{ open}}</p>
+                <p class="h3 text-danger" v-else>{{ close}}</p>
+
+            </div>                    
+                </div>
+                <!-- time section ending -->
+
+            </div>
+            </div>
+            <div class="right_section">
+                <h1 class="footer_title">find us</h1>
+                <p class="footer_text">358, 90 ST TAGAMOA <br>NEW CAIRO LOCATION</p>
+                <br>
+                <h1 class="footer_title">Our Ratin is: &frac45;</h1>
+              
+
+            </div>
+            <br>
+            <p class="footer_copyrigth">&copy;&nbsp;ITALIANO 2021, ALL RIGHTS RESERVED.</p>
+        </footer>
+        <!-- END FOOTER -->
+    </body>
+
+</html>

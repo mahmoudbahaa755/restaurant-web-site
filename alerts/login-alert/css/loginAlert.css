@@ -1,0 +1,43 @@
+body {
+  background-image: url("../../../assests/Background/login_signup_image.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.bottom_top {
+  height: 150px;
+}
+
+.alerts {
+  height: 350px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.2;
+}
+
+p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.tryAgain {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 17px;
+  padding-left: 7px;
+  font-size: 20px;
+  font-style: bold;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #ce244b;
+}
