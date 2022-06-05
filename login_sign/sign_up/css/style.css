@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  z-index: -1;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  z-index: -1;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* START SIGN UP SECTION  */
+.bottom_top {
+  height: 50px;
+}
+.signup {
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  background-color: #222831;
+  border-radius: 15px;
+
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  line-height: 1.2;
+}
+.restname {
+  text-align: center;
+  color: whitesmoke;
+  font-style: italic;
+  padding: 20px;
+  font-size: 25px;
+}
+#name_input {
+  width: 300px;
+  height: 40px;
+  border: solid;
+  border-color: #ffc107;
+  border-radius: 10px;
+  padding-left: 8px;
+}
+#email {
+  width: 300px;
+  height: 40px;
+  border: solid;
+  border-color: #ffc107;
+  border-radius: 10px;
+  padding-left: 8px;
+}
+#password {
+  width: 300px;
+  height: 40px;
+  border: solid;
+  border-color: #ffc107;
+  border-radius: 10px;
+  padding-left: 8px;
+}
+.or {
+  color: whitesmoke;
+  margin-bottom: 200px;
+}
+#log {
+  width: 250px;
+  height: 50px;
+  border: none;
+  border-radius: 17px;
+  padding-left: 7px;
+  font-size: 20px;
+  font-style: bold;
+  color: #222831;
+  background-color: #ffc107;
+  cursor: pointer;
+}
+
+#signup {
+  cursor: pointer;
+}
+
+.login {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 17px;
+  padding-left: 7px;
+  font-size: 20px;
+  font-style: bold;
+  color: #222831;
+  background-color: #ffc107;
+}
+/* Small Screen */
+
+@media (min-width: 400px) {
+  .signup {
+    width: 70%;
+  }
+}
+
+/* Medium Screen */
+
+@media (min-width: 992px) {
+  .signup {
+    width: 70%;
+  }
+}
+
+/* Large Screen */
+
+@media (min-width: 1200px) {
+  .signup {
+    width: 50%;
+  }
+}
+
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 3px 1px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+/* END SIGN UP SECTION  */
+/* password section */
+.password-section{
+  position: relative;
+}
+.password-section .len-2{
+  left: 33%;
+  display: none;
+  background-color: red;
+}
+.password-section .len-1{
+  left: 0%;
+  display: none;
+    border-bottom-left-radius: 100%;
+
+  background-color: blue;
+}
+.password-section .len-3{
+      left: 66%;
+      display: none;
+    border-bottom-right-radius: 100%;
+    background-color: green;
+
+}
+.password-section span{
+    width: 33%;
+    height: 6px;
+    position: absolute;
+    bottom: 15px;
+}
+.password-section .len-section{
+      position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 15px;
+
+}
+meter{
+      position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 7px;
+    color: red;
+}

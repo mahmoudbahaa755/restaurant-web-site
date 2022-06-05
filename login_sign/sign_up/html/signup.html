@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sign Up</title>
+    
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="icon" href="../../../assests/Burger_icon/burger.png" type="burger/png" sizes="16x16">
+
+    <script src="../js/sign_up.js"></script>
+
+    <!-- SOCIAL MEDIA ICONS  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+
+
+    <video autoplay muted loop id="myVideo">
+        <source src="/Login_background.mp4" type="video/mp4">
+      </video>
+
+ <!-- START SIGN UP SECTION  -->
+
+    <div class="bottom_top">
+    </div>
+    <br></br>
+    <div class="signup"> 
+       
+            <form id="login" method="post" autocomplete="off">
+                <label class="restname">Italiano</label><br><br>
+                
+                <input required type="text" name="name" id="name_input" placeholder="Name">
+                <br></br>
+                <input required type="email" name="email" id="email" placeholder="Email">
+                <br></br>
+                
+                <div class="password-section">
+
+                <input required type="password"onchange='passwordLen()' id="password" name="passowrd" placeholder="password">
+
+                    <span class="len-1"id='len-1'>
+                        
+                    </span>
+                    <span class="len-2"id='len-2'>
+                        
+                    </span>
+                    <span class="len-3"id='len-3'></span>
+                    <!-- <meter class="password-meter" id='password-meter'min=1 max="4" low="1" high="4" optimum="4" value="1">
+<div class="meter-gauge">
+    <span style="width: 46.42%;">Disk Usage - 55.93GB out of 120GB</span>
+  </div>
+                        </meter> -->
+                <br></br>
+                </div>
+                
+                
+                <input type="button" onclick="submitUser()" value="SIGN UP"  id="log"/>
+                <br><br>
+                <input type="button" onclick="toLogin()" value="LOG IN" id="signup" class="login"/>
+                <br></br>
+                <label class="or">-OR-</label>
+                <br></br>
+                
+                <!-- SOCIAL MEDIA ICONS  -->
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-instagram"></a>
+
+            </form>    
+ <!-- END SIGN UP SECTION  -->
+
+</body>
+</html>

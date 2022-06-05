@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    color: #11161a;
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+
+}
+
+.container {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Small Screen */
+
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+
+/* Medium Screen */
+
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+
+/* Large Screen */
+
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+
+/* sign table */
+
+.contain {
+    width: 600px;
+    border: 1px solid #C8CDD2;
+    margin: 0px auto 40px auto;
+}
+
+.contain .sign-type {
+    display: flex;
+    height: 8%;
+    justify-content: space-around;
+}
+.sign-up-page{
+    display: none;
+}
+.sign-type button{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 0px solid whitesmoke;
+}
+.sign-in{
+    border-bottom: 1px solid #C8CCD2;
+}
+.contain .sign-in,
+.sign-up {
+    border-left: 1px solid #C8CCD2 !important;
+    cursor: pointer;
+    display: flex;
+    border: 0px solid black;
+    width: 50%;
+    padding: 20px;
+    height: 100%;
+    text-align: center;
+    font-weight: 800;
+    justify-content: center;
+    align-items: center;
+}
+
+.contain .sign-page {
+    text-align: center;
+}
+
+
+/* fast sign */
+
+
+.sign-with button {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    color: rgb(124, 112, 112);
+    display: flex;
+    margin-bottom: 7px;
+    padding: 10px;
+    width: 80%;
+    font-weight: 700;
+    align-items: center;
+    border: 1px solid gainsboro;
+    justify-content: center;
+}
+
+.sign-with button img {
+    width: 32px;
+    height: 32px;
+}
+
+.contain .sign-page h2 {
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+
+/* or div  */
+
+.or {
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    color: #11161a;
+    font-weight: 400;
+}
+
+.or::before {
+    position: absolute;
+    content: '';
+    background-color: gainsboro;
+    height: 1.5px;
+    width: 45%;
+    top: 50%;
+    right: 10px;
+}
+
+.or::after {
+    position: absolute;
+    content: '';
+    background-color: gainsboro;
+    height: 1.5px;
+    width: 45%;
+    top: 50%;
+    left: 10px;
+}
+
+
+/* normal sign */
+
+
+
+form input {
+    width: 90%;
+    padding: 7px;
+    margin-top: 7px;
+    border-radius: 3px;
+    border: 1px solid gainsboro;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+form input[type='submit']{
+    width: fit-content;
+    padding: 12px;
+    border-radius: 9PX;
+    background-color: #017a9b;
+    color: whitesmoke;
+    margin-bottom: 20px;
+    -webkit-border-radius: 9PX;
+    -moz-border-radius: 9PX;
+    -ms-border-radius: 9PX;
+    -o-border-radius: 9PX;
+}
+form .Password-sign-up{
+    position: relative;
+}
+form .Password-sign-up .pass-len{
+    background: black;
+    width: 100%;
+    height: 3px;
+    position:absolute;
+  
+}
+.pass-bar{
+    position: relative;
+}
+meter{
+        width: 90%;
+    margin-top: -10px;
+    position: absolute;
+    bottom: -11px;
+    left: 30px;
+  
+}
+.meter-gauge {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: whiteSmoke;
+    box-shadow: 0 5px 5px -5px #333 inset;
+    width: 550px;
+    height: 25px;
+    display: block;
+}
+
+.meter-gauge > span {
+  height: inherit;  
+  box-shadow: 0 5px 5px -5px #999 inset;
+  background-color: blue;
+  background-image: linear-gradient(
+    90deg, 
+    #8bcf69 5%, 
+    #e6d450 5%,
+    #e6d450 15%,
+    #f28f68 15%,
+    #f28f68 55%,
+    #cf82bf 55%,
+    #cf82bf 95%,
+    #719fd1 95%,
+    #719fd1 100%
+  );
+  background-size: 100% 100%;
+  display: block;
+  text-indent: -9999px;
+}
+.sign-in-page{
+    display: none;
+}
+/* HEADER */
+.image{
+    margin-top: 40px;
+}
+header{
+    margin-bottom: 20px;
+    box-shadow: -7px -9px 45px 21px #cbcbcb;
+}
+ul{
+    list-style-type: none;
+}
+li{
+        margin-left: 43%;
+    margin-bottom: 49px;;
+
+}
+h2+h4{
+    max-width: 450px;
+    text-align: center;
+    margin: 20px auto;
+}
